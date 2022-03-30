@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+	</head>
+		<meta charset="utf-8">
+		    <style> 
+		      body{text-align:center} 
+		    </style> 
+		<h1 class='auto-style'>Optimizing Shoulder to Shoulder: A Coordinated Sub-Band Fusion Model for Real-Time Full-Band Speech Enhancement</h1>
+		<h2 class='auto-style'>
+			Audio Samples on DNS-Challenge 2022
+		</h2>
+		<table style="width: 100%">
+			<tr>
+				<th class='auto-style'>Sample Name</th>
+				<th class='auto-style'>Noisy</th>
+				<th class='auto-style'>NSNet2</th>
+				<th class='auto-style'>SF-Net</th>
+			</tr>
+			<tr>
+				<td class='auto-style'>p232_003</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p232_003.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p232_003.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p232_003.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p232_005</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p232_005.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p232_005.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p232_005.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p232_006</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p232_006.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p232_006.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p232_006.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p232_011</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p232_011.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p232_011.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p232_011.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p232_014</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p232_014.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p232_014.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p232_014.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p232_015</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p232_015.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p232_015.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p232_015.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p232_016</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p232_016.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p232_016.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p232_016.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p232_019</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p232_019.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p232_019.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p232_019.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p232_021</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p232_021.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p232_021.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p232_021.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p232_022</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p232_022.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p232_022.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p232_022.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p232_023</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p232_023.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p232_023.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p232_023.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p232_024</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p232_024.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p232_024.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p232_024.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p232_052</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p232_052.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p232_052.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p232_052.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p232_170</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p232_170.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p232_170.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p232_170.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p257_003</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p257_003.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p257_003.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p257_003.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p257_008</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p257_008.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p257_008.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p257_008.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p257_011</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p257_011.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p257_011.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p257_011.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p257_015</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p257_015.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p257_015.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p257_015.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p257_016</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p257_016.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p257_016.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p257_016.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p257_019</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p257_019.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p257_019.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p257_019.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p257_022</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p257_022.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p257_022.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p257_022.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p257_023</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p257_023.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p257_023.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p257_023.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p257_024</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p257_024.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p257_024.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p257_024.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p257_054</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p257_054.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p257_054.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p257_054.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+			<tr>
+				<td class='auto-style'>p257_143</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/noisy/p257_143.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/CMGAN/p257_143.wav", type="audio/mpeg">
+					</audio>
+				</td>
+				<td class='auto-style'>
+					<audio controls>
+						<source src="AudioSamples/clean/p257_143.wav", type="audio/mpeg">
+					</audio>
+				</td>
+			</tr>
+		</table>
+	</head>
+	<body>
+	</body>
+</html>
+
